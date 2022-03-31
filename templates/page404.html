@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+Error
+{% endblock %}
+
+{% block container %}
+    <div class="container">
+<h1><p>The file is not selected, or is not in the correct format, or has an invalid file name
+    (use Latin characters for the name).
+    <p>Click <a href="{{ url_for('index') }}">continue</a> to return to uploading images!</h1>
+    </div> <!-- /container -->
+{% endblock %}
+
+
+
+

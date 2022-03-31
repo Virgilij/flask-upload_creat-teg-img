@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}
+Document
+{% endblock %}
+
+{% block container %}
+    <form method="POST"  enctype="multipart/form-data"> <!-- method="POST" - allows you to send requests to it
+     enctype="multipart/form-data" - allows you to call the file selection menu-->
+        <p>{{ form.csrf_token }}
+        <p>{{ form.image }} </p>   <!-- form.image - takes information from the form variable,
+        which takes values from the MyForm 'image' class -->
+        <button class="copyText" type="submit">Upload</button> <!-- Download button -->
+
+<p>Copy the image tag and paste it into the text of the article.</p>
+
+    </form>
+
+    <!—- Text field to copy link tag-->
+<input class="inputText" id="inputText" type="text" value="{{link}}">
+
+<!-- Button -->
+<button class="copyText" id="copyText">Copy</button>
+
+<script>
+    /* Saving the text field to the "text" variable */
+var text = document.getElementById("inputText");
+
+/* Save the setting to the btn variable */
+var btn = document.getElementById("copyText");
+
+/* Calling a function on button click */
+btn.onclick = function() {
+  text.select();
+  document.execCommand("copy");
+  }
+</script>
+<p><div class="shadowbox">
+
+    <a href="{{ url_for('show_img') }}">View Image</a>
+
+</div>
+
+{% endblock %}

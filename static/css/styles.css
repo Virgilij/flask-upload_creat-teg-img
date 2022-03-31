@@ -1,0 +1,142 @@
+html, body {
+	font-family: 'Arial';
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	color: #0059b2;
+	text-decoration: none;
+}
+a:hover {
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+.clear {clear: both;}
+
+ul.mainmenu {
+	list-style: none;
+	background: #3F4137;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	color: #fdc073;
+	font-size: 20px;
+	overflow: hidden;
+}
+ul.mainmenu li {
+	float: left;
+	margin: 18px 40px 0 50px;
+}
+ul.mainmenu li.last {float: right;}
+
+ul.mainmenu li a {
+	color: #fdc073;
+	text-decoration: none;
+}
+ul.mainmenu li a:hover {
+	color: #FDA83D;
+}
+
+div.content {
+	margin: 10px;
+}
+
+.form-contact label {
+	display: inline-block;
+	min-width: 80px;
+}
+.form-contact p {margin: 10px 0 10px 0;}
+.form-contact input[type=submit], textarea {
+	font-size: 16px;
+}
+
+.form-contact .invalid {
+	background: #FF9898;
+}
+.form-contact .invalid-feedback {
+	color: #CC0000;
+}
+
+.flash {padding: 10px;}
+.flash.success {
+	border: 1px solid #21DB56;
+	background: #AEFFC5;
+}
+.flash.error {
+	border: 1px solid #FF4343;
+	background: #FF9C9C;
+}
+
+ul.ddropdownn li {/* We consider the coordinates relative to the original location.*/ position: relative; }
+ul.ddropdownn, ul.ddropdownn-inside {
+    /* Zero offsets. */
+    padding: 0;
+    /* Remove the markers. */
+    list-style-type: none;
+    }
+ul.ddropdownn-inside {
+    /* Hide the child elements of the dropdown list. */
+    left: -9999px;
+    position: absolute;
+    }
+ul.ddropdownn li.ddropdownn-top {
+    /* A small indent. */
+    margin: 0 1px 0 0;
+    /* Left side alignment. */
+    float: left;
+    display: inline;
+    }
+ul.ddropdownn li.ddropdownn-top a {
+    /* Make blocks of elements. */
+    display: block;
+    /* Backtracking again. */
+    padding: 3px 10px 4px;
+    }
+ul.ddropdownn a.ddropdownn-top {/* Background color. */ background: #efefef; }
+ul.ddropdownn a.ddropdownn-top:hover {/* Indents. */ padding: 3px 10px 4px; }
+ul.ddropdownn li.ddropdownn-top:hover .ddropdownn-inside {
+    left: 0;
+    /* Make blocks of elements. */
+    display: block;
+    }
+ul.ddropdownn .ddropdownn-inside {/* Background color. */ background: #ffffff; }
+ul.ddropdownn .ddropdownn-inside a:hover {/* The background color will change on hover. */ background: #efefef; }
+
+/* Text field style*/
+.inputText {
+  padding: 6px 7px;
+  font-size: 15px;
+}
+
+/* Button styles*/
+.copyText {
+  padding: 6px 11px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #3F4137;
+  color: #fdc073;
+}
+
+#image {
+  padding: 6px 11px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #3F4137;
+  color: #fdc073;
+}
+
+.shadowbox {
+  width: 6em;
+  border: 1px solid #333;
+  box-shadow: 2px 2px 1px #3F4137;
+  padding: 6px 11px;
+  background-image: linear-gradient(180deg, #fff, #fdc073 70%, #ccc);
+}
+
+#file-upload-button{
+    background: #3F4137;
+}
